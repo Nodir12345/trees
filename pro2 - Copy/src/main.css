@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    font-weight: 700;
+    font-display: 72px;
+  }
+
+  .container {
+    width: 1200px;
+   margin: 0  auto;
+  }
+
+}
+
+@layer utilities {
+  .flex-y-center {
+    @apply flex items-center;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-x-center {
+    @apply flex justify-center;
+  }
+
+  .flex-center-between {
+    @apply flex items-center justify-between;
+  }
+  .private_btn{
+    @apply w-full bg-blue py-3 rounded-lg font-semibold text-white  hover:text-blue hover:bg-logo-grey duration-500
+  }
+  .secondary_btn{
+    @apply w-full bg-white py-3 rounded-lg font-semibold border-solid border border-blue text-blue hover:text-logo-grey hover:bg-blue duration-500
+  }
+
+
+
+
+}
